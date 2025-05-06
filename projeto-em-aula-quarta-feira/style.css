@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-link: #5a13b4;
+    --cor-texto: #3b1270;
+    --cor-texto-destaque: #8E35FF;
+    --cor-texto-branco: #ffffff;
+    --cor-texto-categoria: #CC7F0B;
+
+    --cor-background-roxo: #3B1270;
+    --cor-background-roxo-claro: #8E35FF;
+    --cor-background-rodape: #ded0f17e;
+
+    --cor-borda: 90, 19, 180;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding-top: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+a:hover {
+    color: var(--cor-texto-destaque);
+}
+
+.marginSite {
+    margin: 0 15%;
+}
+
+.alinharDivs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gapDiv {
+    gap: 20%;
+}
+
+.gapDivBlog {
+    gap: 15%;
+}
+
+.marginSuperior {
+    margin-top: 10%;
+}
+
+.corTextoBranco {
+    color: var(--cor-texto-branco);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin: 6% 0 3%;
+}
+
+span {
+    color: var(--cor-texto);
+}
+
+@media screen and (max-width: 1024px) {
+    .alinharDivs {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marginSite {
+        margin: 0 5%;
+    }
+}
+
+.campoBusca {
+    border: 1px solid rgba(var(--cor-borda), 0.2);
+    padding: 2% 4%;
+    min-width: 220px;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: var(--cor-texto);
+}
+
+input::placeholder {
+    color: var(--cor-texto);
+    opacity: 0.2;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ambienteVirtual {
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+h2 {
+    max-width: 940px;
+    font-size: 7rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+.textoSubTitulo {
+    max-width: 240px;
+    color: var(--cor-texto);
+    position: relative;
+    bottom: -85px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 4rem;
+    }
+
+    .imagemSetaAmarela {
+        display: none;
+    }
+
+    .textoSubTitulo {
+        max-width: 435px;
+        position: initial;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.15rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.backgroundEscolhaCurso {
+    background-color: var(--cor-background-roxo);
+}
+
+.containerEscolhaCurso {
+    display: flex;
+}
+
+.posicaoPersonagem {
+    position: relative;
+    top: -75px;
+}
+
+.containerInfoEscolhaCurso {
+    padding: 4% 2%;
+}
+
+.subtituloEscolhaCurso {
+    font-size: 2rem;
+}
+
+.containerGraduacaoEscolhaCurso {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 3% 4%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 495px;
+}
+
+.alinharBotoes {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.botaoEscolhaCurso {
+    width: 17px;
+    height: 17px;
+}
+
+.tituloSoftSkills {
+    font-size: 1.2rem;
+}
+
+.tabelaSoftSkills {
+    margin: 4% 0;
+}
+
+.bordaSuperior {
+    border-top: 15px solid transparent;
+}
+
+bordaDireita {
+    border-right: 50px solid transparent;
+}
+
+@media screen and (max-width: 1024px) {
+    .posicaoPersonagem {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subtituloEscolhaCurso {
+        font-size: 1.5rem;
+    }
+
+    .containerGraduacaoEscolhaCurso {
+        flex-wrap: wrap;
+        min-width: 0;
+        gap: 15px;
+    }
+
+    .alinharBotoes {
+        gap: 10%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botaoEscolhaCurso {
+        width: 34px;
+        height: 34px;
+    }
+
+    .tamanhoImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.botaoInscreverSe {
+    display: block;
+    background-color: var(--cor-background-roxo-claro);
+    color: var(--cor-texto-branco);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+    position: relative;
+    top: -45px;
+    transition: 0.3s;
+}
+
+.botaoInscreverSe:hover {
+    background-color: #5a13b4;
+    color: var(--cor-texto-branco);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .botaoInscreverSe {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .botaoInscreverSe {
+        top: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+.botaoCursosGratuitos {
+    transition: 0.3s;
+}
+
+.botaoCursosGratuitos:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+    .botaoCursosGratuitos {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.containerBlog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.textoDestaque {
+    color: var(--cor-texto-destaque);
+}
+
+.botaoBlog {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 340px;
+}
+
+.botaoBlog>div {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.textoCategoria {
+    color: var(--cor-texto-categoria);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.textoTempoLeitura {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px) {
+    .botaoBlog {
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .botaoBlog {
+        width: 100%;
+    }
+}
+
+.botaoBlog>img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--cor-background-rodape);
+    padding: 3% 0;
+}
+
+.containerRodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.containerRodape>div {
+    width: 160px;
+}
+
+.containerContatos {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 5% 0;
+    }
+
+    .containerRodape {
+        flex-wrap: wrap;
+    }
+
+    .containerRodape>div {
+        margin: 10%;
+    }
+}
